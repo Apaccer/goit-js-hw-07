@@ -4,11 +4,247 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.item > h2 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.96px;
+  margin-bottom: 16px;
+}
+
+.item > ul > li {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.item > ul > li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.item {
+  border-radius: 8px;
+  background: #f6f6fe;
+  padding: 16px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+#name-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-bottom: 16px;
+}
+#name-input::placeholder {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.64px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+h1 {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.96px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 24px;
+}
+
+.login-form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  letter-spacing: 0.64px;
+}
+.login-form > label:first-child {
+  margin-bottom: 8px;
+}
+.login-form > label > input {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+.login-form > button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+  width: 86px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  margin-top: 16px;
+}
+
+/*--------5-------------*/
+
+.widget > p {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+.widget > button {
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  border: none;
+  cursor: pointer;
+  width: 148px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+}
+
+/*------------6-----------*/
+
+#controls {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: #f6f6fe;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  margin-bottom: 16px;
+}
+
+#controls > input {
+  width: 150px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  display: flex;
+  padding: 8px 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+[data-create] {
+  display: flex;
+  width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  border: none;
+  cursor: pointer;
+}
+[data-destroy] {
+  display: flex;
+  width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #ff4e4e;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  border: none;
+  cursor: pointer;
+}
+
+#boxes {
+  display: flex;
+  padding: 32px;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 8px;
+  background: #f6f6fe;
 }
